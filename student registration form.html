@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Student Registeration Form</title>
+	<style type="text/css" media="screen">
+/*  parent block   */
+		.parent{
+			margin: 5px auto;
+			width: 650px;
+			height: 500px;
+		}
+/* registeration form title  */
+		.title{
+			border-radius: 15px 15px 0px 0px;
+			font-family: "Arial Black";
+			text-align: center;
+			background-color: #ff6347;
+			color: white;
+			padding: 15px;
+			margin: 0px;
+			font-size: 25px;
+			text-decoration: underline;
+			letter-spacing: 2px;
+			border-bottom: 1px solid #424242;
+			text-shadow: 1px 1px #212121;
+		}	
+/* all block under container  */
+		.container{
+			border-radius: 0px 0px 15px 15px;
+			background-color: #d3d3d3;
+			padding: 5px;
+		}
+/* information block  */
+		.block{
+			border: 2px solid;
+			margin: 10px;
+			padding: 10px;
+			box-shadow: 3px 5px 6px #696969;
+		}
+/* input tags */
+		li{
+			list-style: none;
+			padding: 5px;	
+		}
+/* every block with same CSS properties  */
+		.details, .address, .education, .about{
+			font-family: sans-serif;
+			border: 2px solid black;
+			position: relative;
+			width: 150px;
+			text-align: center;
+			top: +23px;
+			margin-left: 17px;
+			background-color: #4682b4;
+			padding: 5px;
+			color: whitesmoke;
+			letter-spacing: 2px;
+			font-weight: 500;
+			border-radius: 5px;
+		}
+/* register buttom  */
+		.button{
+			text-align: center;
+		}
+/* button css effects  */
+		.button input{
+			background-color: #ff4500;
+			width: 100px;
+			height: 30px;
+			font-family: serif;
+			font-size: 19px;
+			font-weight: 600;
+		}
+		.button input:focus{
+			background-color: green;
+		}
+/* background of the form */
+		.back{
+			background-color: #4682b4;
+			height: 1000px;
+			padding-top: 15px;
+		}
+	</style>
+</head>
+<body>
+	<div class="back">
+		<div class="parent">
+			<div class="title">
+				Student Registeration Form
+			</div>
+
+			<div class="container">
+		<!--- person details block ---->
+				<div class="details">Personal Details</div>
+				<div class="block">
+					<ul>
+						<li>NAME: <input type="text" name="name"></li>
+						<li>AGE: <input type="text" name="age"></li>
+						<li>GENDER: <input type="radio" name="gender">Male
+									<input type="radio" name="age">Female  </li>
+					</ul>
+				</div>
+		<!--- address of the person -- block  ----->
+		<div class="address">Address</div>
+				<div class="block">
+					<ul>
+						<li>House No: <input type="text" name="houseNo">&nbsp;&nbsp;
+							<label>Pincode No:<input type="text" name="pincode" size="5"></label></li>
+						<li>Street No:<input type="text" name="street"></li>
+						<li>Country: <input type="text" name="country"></li>
+					</ul>
+				</div>
+		<!--- education details of the person -- block ---->
+		<div class="education">Education Details</div>
+				<div class="block">
+					<ul>
+						<li>Qualification: 	<input type="radio" name="study">MBA
+											<input type="radio" name="study">MCA
+											<input type="radio" name="study">B.Tech
+											<input type="radio" name="study">PHARMACY
+						</li>
+						<li>Language: 	<input type="checkbox" name="lang">ENGLISH
+										<input type="checkbox" name="lang">TELUGU
+										<input type="checkbox" name="lang">HINDI
+						</li>
+					</ul>
+				</div>
+		<!--- about the person -- block --->
+		<div class="about">About You</div>
+				<div class="block">
+					<li>Few Words About You: <textarea name="textAbout" id="" cols="30" rows="4"></textarea></li>
+				</div>
+				<div class="button"><input type="button" value="Register"></div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
